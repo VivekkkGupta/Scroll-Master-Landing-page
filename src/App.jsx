@@ -1,7 +1,7 @@
 import React from 'react';
 import scrollmasterposter from '../public/scroll-master-poster.png';
-import scrollmasterlogo from '../public/scroll-master-logo.png';
 import scrollmasterpreview from './assets/scroll_Master_Preview.mp4';
+import scrollmasterlogo from '../public/scroll-master-logo.png';
 
 const developerviveklink = "https://developervivek.com/";
 const chromeWebStoreLink = "";
@@ -59,6 +59,7 @@ function App() {
               loop
               autoPlay
               muted
+              playsInline
               className="rounded-lg shadow-md w-full max-w-xl"
             />
           </div>
