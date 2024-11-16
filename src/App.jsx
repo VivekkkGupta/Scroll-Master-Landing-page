@@ -1,10 +1,10 @@
 import React from 'react';
 import scrollmasterposter from '../public/scroll-master-poster.png';
 import scrollmasterlogo from '../public/scroll-master-logo.png';
-import scrollmasterpreview from '../public/scroll_Master_Preview.mp4';
+import scrollmasterpreview from './assets/scroll_Master_Preview.mp4';
 
 const developerviveklink = "https://developervivek.com/";
-const chromeWebStoreLink = ""; // Add your Chrome Web Store link here once available
+const chromeWebStoreLink = "";
 
 function App() {
   return (
