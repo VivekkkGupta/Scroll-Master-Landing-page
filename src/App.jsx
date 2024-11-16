@@ -1,8 +1,10 @@
 import React from 'react';
 import scrollmasterposter from '../public/scroll-master-poster.png';
 import scrollmasterlogo from '../public/scroll-master-logo.png';
+import scrollmasterpreview from '../public/scroll_Master_Preview.mp4';
 
-const developerviveklink = "https://developervivek.com/"
+const developerviveklink = "https://developervivek.com/";
+const chromeWebStoreLink = ""; // Add your Chrome Web Store link here once available
 
 function App() {
   return (
@@ -19,30 +21,30 @@ function App() {
       </header>
 
       {/* Introduction Section */}
-      <section className="py-10 w-[50%] mx-auto ">
+      <section className="py-10 w-[50%] mx-auto">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold text-center mb-4">Introduction</h2>
-          <p className=" text-lg">
+          <p className="text-lg">
             Scroll Master is a Chrome Extension designed to simplify browsing by auto-scrolling pages and
             switching tabs seamlessly. Whether you're reading, researching, or monitoring multiple pages, Scroll Master makes it effortless.
           </p>
-          <br />
-          <p className=" text-lg">
-            Imagine presenting your business stats on a big screen to stakeholders. With Scroll Master, you can
-            auto-scroll through your slides or web pages without human intervention.
-          </p>
         </div>
         <br />
-        <div className=''>
-          <p className="text-center font-bold text-lg mt-4">
-            Applications of Scroll Master include:
-          </p>
-          <ul className="list-disc list-inside mt-2 text-lg">
-            <li>Presentations in meetings or conferences.</li>
-            <li>Auto-scrolling through live dashboards and stats.</li>
-            <li>Reading lengthy web pages or articles hands-free.</li>
-            <li>Efficiently navigating multiple tabs for monitoring.</li>
-          </ul>
+        <div className="text-center">
+          {chromeWebStoreLink ? (
+            <a
+              href={chromeWebStoreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-blue-700"
+            >
+              Install Extension
+            </a>
+          ) : (
+            <span className="cursor-not-allowed bg-yellow-500 text-white px-6 py-2 rounded-lg text-lg font-semibold">
+              Coming Soon (Under Review by Google Store)
+            </span>
+          )}
         </div>
       </section>
 
@@ -50,6 +52,17 @@ function App() {
       <section className="py-10">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-semibold text-center mb-6">Features at a Glance</h2>
+          <div className="flex justify-center">
+            <video
+              src={scrollmasterpreview}
+              alt="Scroll Master Poster"
+              loop
+              autoPlay
+              muted
+              className="rounded-lg shadow-md w-full max-w-xl"
+            />
+          </div>
+          <br />
           <div className="flex justify-center">
             <img
               src={scrollmasterposter}
