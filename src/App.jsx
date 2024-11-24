@@ -1,6 +1,6 @@
 import React from 'react';
 import scrollmasterposter from '../public/scroll-master-poster.png';
-import scrollmasterpreview from './assets/scroll_Master_Preview.mp4';
+// import scrollmasterpreview from './assets/scroll_Master_Preview.mp4';
 import scrollmasterlogo from '../public/scroll-master-logo.png';
 import { RiExternalLinkLine } from "react-icons/ri";
 
@@ -58,7 +58,7 @@ function App() {
       <section className="py-10">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-semibold text-center mb-6">Features at a Glance</h2>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <video
               src={scrollmasterpreview}
               alt="Scroll Master Poster"
@@ -68,8 +68,8 @@ function App() {
               playsInline
               className="rounded-lg shadow-md w-full max-w-xl"
             />
-          </div>
-          <br />
+          </div> */}
+          {/* <br /> */}
           <div className="flex justify-center">
             <img
               src={scrollmasterposter}
