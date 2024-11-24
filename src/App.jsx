@@ -2,9 +2,10 @@ import React from 'react';
 import scrollmasterposter from '../public/scroll-master-poster.png';
 import scrollmasterpreview from './assets/scroll_Master_Preview.mp4';
 import scrollmasterlogo from '../public/scroll-master-logo.png';
+import { RiExternalLinkLine } from "react-icons/ri";
 
 const developerviveklink = "https://developervivek.com/";
-const chromeWebStoreLink = "";
+const chromeWebStoreLink = "https://chromewebstore.google.com/detail/scroll-master/majkanfpddecgnieheiiibbpcpinjado";
 
 function App() {
   return (
@@ -33,12 +34,17 @@ function App() {
         <div className="text-center">
           {chromeWebStoreLink ? (
             <a
-              href={chromeWebStoreLink}
-              target="_blank"
+
               rel="noopener noreferrer"
-              className="cursor-pointer bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-blue-700"
+              className="flex items-center justify-center"
             >
-              Install Extension
+              <button className='flex items-center gap-2 cursor-pointer bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-blue-700' href={chromeWebStoreLink}
+                target="_blank">
+                <h2>Install Extension</h2>
+                <span>
+                  <RiExternalLinkLine />
+                </span>
+              </button>
             </a>
           ) : (
             <span className="cursor-not-allowed bg-yellow-500 text-white px-6 py-2 rounded-lg text-lg font-semibold">
