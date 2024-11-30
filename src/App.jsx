@@ -34,11 +34,12 @@ function App() {
         <div className="text-center">
           {chromeWebStoreLink ? (
             <a
-
+              href={chromeWebStoreLink}
+              target='_blank'
               rel="noopener noreferrer"
               className="flex items-center justify-center"
             >
-              <button className='flex items-center gap-2 cursor-pointer bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-blue-700' href={chromeWebStoreLink}
+              <button  href={chromeWebStoreLink} className='flex items-center gap-2 cursor-pointer bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-blue-700'
                 target="_blank">
                 <h2>Install Extension</h2>
                 <span>
